@@ -1,14 +1,14 @@
-import { PFPage } from './app.po';
+import { PFsPage } from './app.po';
 
-describe('pf App', () => {
-  let page: PFPage;
+describe('pfs App', () => {
+  let page: PFsPage;
 
   beforeEach(() => {
-    page = new PFPage();
+    page = new PFsPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class PFPage {
+export class PFsPage {
   navigateTo() {
     return browser.get('/');
   }
