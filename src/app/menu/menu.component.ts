@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from  'jquery';
 
 @Component({
   selector: 'app-menu',
@@ -10,6 +11,12 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public scrollToProduct(id: string) {
+    let scroller = $('.products');
+    let scrollTo = $(`#${id}`).position().left;
+    scroller.animate({'scrollLeft': scrollTo}, 500);
   }
 
 }
