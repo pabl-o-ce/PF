@@ -1,0 +1,18 @@
+@import 'sass/variables';
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  background-color: $white;
+  color: $dark-1;
+  font: {
+    family: $font-main;
+    size: 16px;
+  }
+  position: relative;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}

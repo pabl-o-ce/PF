@@ -1,0 +1,86 @@
+@import '../../sass/colors';
+
+.main-header {
+  .social-nav {
+    align-items: center;
+    background: $green;
+    border-bottom: 2px solid $light;
+    color: $white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
+
+.social-media,
+.social-phones {
+  a {
+    color: $white;
+    display: inline-block;
+    text-decoration: none;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+}
+
+.main-nav {
+  background: $brown;
+  color: $dark-1;
+  figure {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+      width: 280px;
+      height: 200px;
+    }
+  }
+}
+
+.main-nav-menu {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px;
+  white-space: nowrap;
+
+  li {
+    display: list-item;
+    text-align: center;
+
+    .nav-link {
+      color: $dark-2;
+      font-weight: bold;
+      padding: .5em 1em;
+
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+
+  .active {
+    .nav-link {
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .main-nav-menu {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    padding: 0 !important;
+  }
+}

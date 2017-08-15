@@ -8,8 +8,18 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "img",
+        { "glob": "manifest.json", "input": "assets/favicons/", "output": "./" },
+        { "glob": "android-chrome-192x192.png", "input": "assets/favicons/", "output": "./" },
+        { "glob": "android-chrome-256x256.png", "input": "assets/favicons/", "output": "./" },
+        { "glob": "apple-touch-icon.png", "input": "assets/favicons/", "output": "./" },
+        { "glob": "browserconfig.xml", "input": "assets/favicons/", "output": "./" },
+        { "glob": "favicon-16x16.png", "input": "assets/favicons/", "output": "./" },
+        { "glob": "favicon-32x32.png", "input": "assets/favicons/", "output": "./" },
+        { "glob": "mstile-150x150.png", "input": "assets/favicons/", "output": "./" },
+        { "glob": "sprite.social.svg", "input": "assets/favicons/", "output": "./" },
+        { "glob": "safari-pinned-tab.svg", "input": "assets/favicons/", "output": "./" }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,7 +29,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/normalize.css/normalize.css",
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -52,6 +63,7 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {
+    }
   }
 }
