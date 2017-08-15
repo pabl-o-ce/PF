@@ -10,6 +10,7 @@
       "assets": [
         "favicon.ico",
         "img",
+        { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" },
         { "glob": "manifest.json", "input": "assets/favicons/", "output": "./" },
         { "glob": "android-chrome-192x192.png", "input": "assets/favicons/", "output": "./" },
         { "glob": "android-chrome-256x256.png", "input": "assets/favicons/", "output": "./" },
@@ -30,6 +31,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/normalize.css/normalize.css",
+        "../node_modules/octicons/build/octicons.min.css",
         "styles.scss"
       ],
       "scripts": [],

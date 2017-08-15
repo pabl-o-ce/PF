@@ -12,6 +12,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
 a {
   color: $blue;
   text-decoration: none;
