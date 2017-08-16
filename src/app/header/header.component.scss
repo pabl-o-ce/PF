@@ -76,9 +76,10 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
   .main-nav-menu {
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    height: 76px;
     justify-content: space-around;
   }
 

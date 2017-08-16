@@ -41,6 +41,16 @@
   }
 }
 
+@media (max-width: 339px) {
+  .menu {
+    .menu-category {
+      li {
+        padding: 10px;
+      }
+    }
+  }
+}
+
 .products {
   height: 270px;
 
