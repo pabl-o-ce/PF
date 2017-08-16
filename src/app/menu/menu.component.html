@@ -1,12 +1,12 @@
 <section class="menu">
   <ul class="menu-category">
-    <li><a href="javascript:void(0)" (click)="scrollToProduct('fritadas')">Fritadas</a></li>
-    <li><a href="javascript:void(0)" (click)="scrollToProduct('sopas')">Sopas</a></li>
-    <li><a href="javascript:void(0)" (click)="scrollToProduct('entradas')">Entradas</a></li>
-    <li><a href="javascript:void(0)" (click)="scrollToProduct('bebidas')">Bebidas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(0)">Fritadas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(800)">Sopas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(1600)">Entradas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(1920)">Bebidas</a></li>
   </ul>
   <div class="menu-products">
-    <ul class="products">
+    <ul class="products" (scroll)="horizontalScroll()">
       <li id="fritadas">
         <a class="product" href="javascript:void(0)">
           <img class="product-image" src="img/products/FritadaCompleta-fs8.png" alt="Fritada Completa">

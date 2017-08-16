@@ -13,10 +13,13 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  public scrollToProduct(id: string) {
-    let scroller = $('.products');
-    let scrollTo = $(`#${id}`).position().left;
+  public scrollToProduct(scrollTo: number) {
+    const scroller = $('.products');
     scroller.animate({'scrollLeft': scrollTo}, 500);
+  }
+
+  public horizontalScroll() {
+
   }
 
 }
