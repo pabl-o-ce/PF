@@ -1,0 +1,40 @@
+
+.awards {
+  background: {
+    image: url('/img/premios/background.jpg');
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+  }
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  .award {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 634px) {
+  .awards {
+    .award {
+      max-height: 200px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .awards {
+    .award {
+      max-height: 180px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .awards {
+    .award {
+      max-height: 150px;
+    }
+  }
+}
