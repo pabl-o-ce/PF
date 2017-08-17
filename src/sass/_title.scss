@@ -1,9 +1,10 @@
 @import './variables';
 
 .section-title {
-  color: $brown;
+  color: rgba(0,0,0,.8);
   border-bottom: 1px solid #eee;
   line-height: 30px;
   font-weight: bold;
+  margin: 1em 0;
   text-align: center;
 }
