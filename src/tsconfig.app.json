@@ -5,7 +5,8 @@
     "baseUrl": "./",
     "module": "es2015",
     "types": [
-      "jquery"
+      "jquery",
+      "googlemaps"
     ]
   },
   "exclude": [
