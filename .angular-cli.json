@@ -10,6 +10,7 @@
       "assets": [
         "favicon.ico",
         "img",
+        { "glob": "data.json", "input": "assets/", "output": "./" },
         { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" },
         { "glob": "mapicon.png", "input": "assets/favicons/", "output": "./" },
         { "glob": "manifest.json", "input": "assets/favicons/", "output": "./" },

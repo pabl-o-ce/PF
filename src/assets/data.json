@@ -1,144 +1,150 @@
 {
-  "products": {
-    "fritadas": [
-      {
-        "id": 1,
-        "name": "Fritada Completa",
-        "img": "FritadaCompleta-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "cerdo", "choclo de maiz", "maduro", "tortilla de papa", "mote", "encebollado", "aguacate", "tostado de maiz"
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Fritada con Choclo",
-        "img": "FritadaconChoclo-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "cerdo", "choclo de maiz", "mote", "encebollado", "tostado de maiz"
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Fritada con Maduro",
-        "img": "FritadaconMaduro-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "cerdo", "maduro", "mote", "encebollado", "tostado de maiz"
-        ]
-      },
-      {
-        "id": 4,
-        "name": "Fritada con Tortillas",
-        "img": "FritadaconTortillas-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "cerdo", "tortilla de papa", "mote", "encebollado", "aguacate", "tostado de maiz"
-        ]
-      },
-      {
-        "id": 5,
-        "name": "Fritada Sola",
-        "img": "FritadaSola-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "cerdo", "mote", "encebollado", "tostado de maiz"
-        ]
-      }
-    ],
-    "sopas": [
-      {
-        "id": 6,
-        "name": "Caldo de Gallina",
-        "img": "CaldodeGallina-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "pollo", "papa", "verduras"
-        ]
-      },
-      {
-        "id": 7,
-        "name": "Caldo de Patas",
-        "img": "CaldodePatas-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "patas", "mote", "verduras"
-        ]
-      },
-      {
-        "id": 8,
-        "name": "Locro de Papa",
-        "img": "LocrodePapa-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "papa", "queso", "tostado", "aguacate"
-        ]
-      },
-      {
-        "id": 9,
-        "name": "Locro de Papa con Cuero",
-        "img": "PapaconCuero-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "papa", "queso", "cuero", "aguacate", "tomate"
-        ]
-      },
-      {
-        "id": 10,
-        "name": "Yaguarlocro",
-        "img": "Yaguarlocro-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": [
-          "papa", "queso", "cuero", "aguacate", "tomate", "cebolla"
-        ]
-      }
-    ],
-    "entradas": [
-      {
-        "id": 11,
-        "name": "Empanada de Morocho",
-        "img": "EmpanadadeMorocho-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": ["morocho"]
-      },
-      {
-        "id": 12,
-        "name": "Mote con Chicharrón",
-        "img": "MoteconChicharron-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": ["mote", "chicharron"]
-      }
-    ],
-    "bebidas": [
-      {
-        "id": 13,
-        "name": "Gaseosas",
-        "img": "gaseosas-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": []
-      },
-      {
-        "id": 14,
-        "name": "Limonada",
-        "img": "limonada-fs8.png",
-        "price": 0,
-        "desc": "yum yum",
-        "ingredients": []
-      },
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Fritada Completa",
+      "img": "FritadaCompleta-fs8.png",
+      "category": "fritadas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "cerdo", "choclo de maiz", "maduro", "tortilla de papa", "mote", "encebollado", "aguacate", "tostado de maiz"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fritada con Choclo",
+      "img": "FritadaconChoclo-fs8.png",
+      "category": "fritadas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "cerdo", "choclo de maiz", "mote", "encebollado", "tostado de maiz"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fritada con Maduro",
+      "img": "FritadaconMaduro-fs8.png",
+      "category": "fritadas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "cerdo", "maduro", "mote", "encebollado", "tostado de maiz"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Fritada con Tortillas",
+      "img": "FritadaconTortillas-fs8.png",
+      "category": "fritadas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "cerdo", "tortilla de papa", "mote", "encebollado", "aguacate", "tostado de maiz"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Fritada Sola",
+      "img": "FritadaSola-fs8.png",
+      "category": "fritadas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "cerdo", "mote", "encebollado", "tostado de maiz"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Caldo de Gallina",
+      "img": "CaldodeGallina-fs8.png",
+      "category": "sopas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "pollo", "papa", "verduras"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Caldo de Patas",
+      "img": "CaldodePatas-fs8.png",
+      "category": "sopas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "patas", "mote", "verduras"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Locro de Papa",
+      "img": "LocrodePapa-fs8.png",
+      "category": "sopas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "papa", "queso", "tostado", "aguacate"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Locro de Papa con Cuero",
+      "img": "PapaconCuero-fs8.png",
+      "category": "sopas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "papa", "queso", "cuero", "aguacate", "tomate"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Yaguarlocro",
+      "img": "Yaguarlocro-fs8.png",
+      "category": "sopas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": [
+        "papa", "queso", "cuero", "aguacate", "tomate", "cebolla"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Empanada de Morocho",
+      "img": "EmpanadadeMorocho-fs8.png",
+      "category": "entradas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": ["morocho"]
+    },
+    {
+      "id": 12,
+      "name": "Mote con Chicharrón",
+      "img": "MoteconChicharron-fs8.png",
+      "category": "entradas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": ["mote", "chicharron"]
+    },
+    {
+      "id": 13,
+      "name": "Gaseosas",
+      "img": "gaseosas-fs8.png",
+      "category": "bebidas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": []
+    },
+    {
+      "id": 14,
+      "name": "Limonada",
+      "img": "limonada-fs8.png",
+      "category": "bebidas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": []
+    }
+  ]
 }

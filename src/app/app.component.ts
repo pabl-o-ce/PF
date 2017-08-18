@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import './shared/rxjs-operators';
 import * as $ from 'jquery';
 
 @Component({

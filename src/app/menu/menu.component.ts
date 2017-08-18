@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { Product, Products } from './../shared/data.interface';
 
 @Component({
   selector: 'app-menu',
@@ -7,10 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  public model: Products;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
+    this.model = this.route.snapshot.data['products'];
   }
 
   public scrollToProduct(scrollTo: number) {

@@ -1,95 +1,17 @@
 <h3 class="section-title">Menú</h3>
 <section class="menu">
   <ul class="menu-category">
-    <li><a href="javascript:void(0)" (click)="scrollToProduct(0)">Fritadas</a></li>
-    <li><a href="javascript:void(0)" (click)="scrollToProduct(800)">Sopas</a></li>
-    <li><a href="javascript:void(0)" (click)="scrollToProduct(1600)">Entradas</a></li>
-    <li><a href="javascript:void(0)" (click)="scrollToProduct(1920)">Bebidas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(0)" title="Fritadas">Fritadas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(800)" title="Sopas">Sopas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(1600)" title="Entradas">Entradas</a></li>
+    <li><a href="javascript:void(0)" (click)="scrollToProduct(1920)" title="Bebidas">Bebidas</a></li>
   </ul>
   <div class="menu-products">
     <ul class="products" (scroll)="horizontalScroll()">
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/FritadaCompleta-fs8.png" alt="Fritada Completa">
-          <span class="product-title">Fritada Completa</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/FritadaconChoclo-fs8.png" alt="Fritada Choclo">
-          <span class="product-title">Fritada con Choclo</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/FritadaconMaduro-fs8.png" alt="Fritada Maduro">
-          <span class="product-title">Fritada con Maduro</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/FritadaconTortillas-fs8.png" alt="Fritada Tortillas">
-          <span class="product-title">Fritada con Tortillas</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/FritadaSola-fs8.png" alt="Fritada Sola">
-          <span class="product-title">Fritada Sola</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/CaldodeGallina-fs8.png" alt="Caldo de Gallina">
-          <span class="product-title">Caldo de Gallina</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/CaldodePatas-fs8.png" alt="Caldo de Patas">
-          <span class="product-title">Caldo de Patas</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/LocrodePapa-fs8.png" alt="Locro de Papa">
-          <span class="product-title">Locro de Papa</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/PapaconCuero-fs8.png" alt="Locro de Papa con Cuero">
-          <span class="product-title">Locro de Papa con Cuero</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/Yaguarlocro-fs8.png" alt="Yaguarlocro">
-          <span class="product-title">Yaguarlocro</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/EmpanadadeMorocho-fs8.png" alt="Empanada de Morocho">
-          <span class="product-title">Empanada de Morocho</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/MoteconChicharron-fs8.png" alt="Mote con Chicharrón">
-          <span class="product-title">Mote con Chicharrón</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/gaseosas-fs8.png" alt="Gaseosas">
-          <span class="product-title">Gaseosas</span>
-        </a>
-      </li>
-      <li>
-        <a class="product" href="javascript:void(0)">
-          <img class="product-image" src="img/products/limonada-fs8.png" alt="Limonada">
-          <span class="product-title">Limonada</span>
+      <li *ngFor="let item of model.products" class="{{item.category}}">
+        <a class="product" href="javascript:void(0)" title="{{item.name}}">
+          <img class="product-image" src="img/products/{{item.img}}" alt="{{item.name}}">
+          <span class="product-title">{{item.name}}</span>
         </a>
       </li>
     </ul>
