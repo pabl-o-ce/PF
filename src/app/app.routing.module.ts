@@ -13,7 +13,6 @@ import { MenuComponent } from './menu/menu.component';
             { path: 'contact', component: ContactComponent },
             { path: 'history', component: HistoryComponent },
             { path: 'location', component: LocationComponent },
-            { path: 'menu', component: MenuComponent },
             // { path: '**', redirectTo: '' }
         ]),
     ],
