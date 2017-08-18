@@ -14,7 +14,7 @@ import { MenuResolve } from './menu/menu.resolve';
             { path: 'contact', component: ContactComponent },
             { path: 'history', component: HistoryComponent },
             { path: 'location', component: LocationComponent },
-            // { path: '**', redirectTo: '' }
+            { path: '**', redirectTo: '' }
         ]),
     ],
     exports: [
