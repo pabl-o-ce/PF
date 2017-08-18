@@ -10,6 +10,7 @@ export class HistoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
   }
 
 }

@@ -11,6 +11,7 @@ export class LocationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
     this.initMap();
   }
 
