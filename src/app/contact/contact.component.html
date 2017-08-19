@@ -1,25 +1,39 @@
 <h3 class="section-title">Contáctanos</h3>
 <section class="contact">
-  <form>
-    <dl class="form-group">
+  <form novalidate [formGroup]="contactGroup">
+    <dl class="form-group"[ngClass]="{'errored': ((contactGroup.controls.name.errors) && (contactGroup.controls.name.dirty || contactGroup.controls.name.touched))}">
       <dt><label>Nombre</label></dt>
-      <dd><input class="form-control" type="text"></dd>
-      <dd class="error">nombre es requerido.</dd>
+      <dd><input class="form-control" type="text" formControlName="name"/></dd>
+      <dd *ngIf="contactGroup.controls.name.errors" class="error" >
+        nombre
+        <span [hidden]="!contactGroup.controls.name.errors.required"> es requerido.</span>
+        <span [hidden]="!contactGroup.controls.name.errors.minlength"> debe mínimo contener 2 caracteres.</span>
+        <span [hidden]="!contactGroup.controls.name.errors.maxlength"> debe máximo contener 60 caracteres.</span>
+      </dd>
     </dl>
-    <dl class="form-group">
+    <dl class="form-group" [ngClass]="{'errored': ((contactGroup.controls.email.errors) && (contactGroup.controls.email.dirty || contactGroup.controls.email.touched))}">
       <dt><label>Email</label></dt>
-      <dd><input class="form-control" type="email"></dd>
-      <dd class="error">email es requerido.</dd>
+      <dd><input class="form-control" type="email" formControlName="email"/></dd>
+      <dd *ngIf="contactGroup.controls.email.errors" class="error">
+        Email
+        <span [hidden]="!contactGroup.controls.email.errors.required"> es requerido.</span>
+        <span [hidden]="!contactGroup.controls.email.errors.email || contactGroup.controls.email.errors.required"> es invalido.</span>
+      </dd>
     </dl>
-    <dl class="form-group">
+    <dl class="form-group" [ngClass]="{'errored': ((contactGroup.controls.comment.errors) && (contactGroup.controls.comment.dirty || contactGroup.controls.comment.touched))}">
       <dt><label>Comentario / Sugerencia</label></dt>
       <dd>
-        <textarea class="form-control"></textarea>
+        <textarea class="form-control" formControlName="comment"></textarea>
       </dd>
-      <dd class="error">comentario es requerido.</dd>
+      <dd *ngIf="contactGroup.controls.comment.errors" class="error">
+        Comentario o sugerencia
+        <span [hidden]="!contactGroup.controls.comment.errors.required"> es requerido.</span>
+        <span [hidden]="!contactGroup.controls.comment.errors.minlength"> debe mínimo contener 4 caracteres.</span>
+        <span [hidden]="!contactGroup.controls.comment.errors.maxlength"> debe máximo contener 500 caracteres.</span>
+      </dd>
     </dl>
     <div class="form-actions">
-      <button type="button" class="btn btn-primary">Enviar</button>
+      <button type="button" class="btn btn-primary" [disabled]="contactGroup.invalid">Enviar</button>
     </div>
   </form>
 </section>

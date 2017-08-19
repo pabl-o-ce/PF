@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Headers, Http, RequestOptions, Response, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
-import { Product, Products } from './data.interface';
+import { IContact, Product, Products } from './data.interface';
 
 @Injectable()
 export class DataService {
@@ -18,6 +18,12 @@ export class DataService {
 
   public getProducts (): Observable<Products> {
     return this.http.get(`data.json`, this.reqOptions)
+    .map(this.extractData)
+    .catch(this.handleError);
+  }
+
+  public postContact (data: IContact): Observable<any> {
+    return this.http.post(`url`, JSON.stringify(data), this.reqOptions)
     .map(this.extractData)
     .catch(this.handleError);
   }

@@ -12,4 +12,12 @@ interface Products {
     products: Product[];
 }
 
-export { Product, Products };
+interface IContact {
+    name?: string;
+    email?: string;
+    comment?: string;
+}
+
+class Contact implements IContact {}
+
+export { Contact, IContact, Product, Products };
