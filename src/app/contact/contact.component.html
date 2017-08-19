@@ -1,6 +1,35 @@
 <h3 class="section-title">Contáctanos</h3>
 <section class="contact">
-  <form novalidate [formGroup]="contactGroup">
+  <div class="flash-messages">
+    <div *ngIf="errorMessage" class="flash flash-error">
+      <span class="octicon flash-close js-flash-close">
+        <svg version="1.1" width="16" height="16" viewBox="0 0  16 16" class="octicon" aria-hidden="true" (click)="errorMessage=null">
+          <use xlink:href="sprite.octicons.svg#x"></use>
+        </svg>
+      </span>
+      <h4>
+        <span class="octicon">
+          <svg version="1.1" width="16" height="16" viewBox="0 0  16 16" class="octicon" aria-hidden="true" (click)="errorMessage=null">
+            <use xlink:href="sprite.octicons.svg#alert"></use>
+          </svg>
+        </span>
+        Error
+      </h4>
+      <p>{{errorMessage}}</p>
+    </div>
+    <div *ngIf="successMessage" class="flash flash-success">
+      <h4>
+        <span class="octicon">
+          <svg version="1.1" width="16" height="16" viewBox="0 0  16 16" class="octicon" aria-hidden="true" (click)="errorMessage=null">
+            <use xlink:href="sprite.octicons.svg#check"></use>
+          </svg>
+        </span>
+        Tu mensaje fue enviado correctamente
+      </h4>
+      <p>Nos pondremos en contacto contigo muy pronto.</p>
+    </div>
+  </div>
+  <form [formGroup]="contactGroup" (ngSubmit)="onSubmit(contactGroup)" novalidate>
     <dl class="form-group"[ngClass]="{'errored': ((contactGroup.controls.name.errors) && (contactGroup.controls.name.dirty || contactGroup.controls.name.touched))}">
       <dt><label>Nombre</label></dt>
       <dd><input class="form-control" type="text" formControlName="name"/></dd>
@@ -26,14 +55,14 @@
         <textarea class="form-control" formControlName="comment"></textarea>
       </dd>
       <dd *ngIf="contactGroup.controls.comment.errors" class="error">
-        Comentario o sugerencia
+        Comentario / sugerencia
         <span [hidden]="!contactGroup.controls.comment.errors.required"> es requerido.</span>
         <span [hidden]="!contactGroup.controls.comment.errors.minlength"> debe mínimo contener 4 caracteres.</span>
         <span [hidden]="!contactGroup.controls.comment.errors.maxlength"> debe máximo contener 500 caracteres.</span>
       </dd>
     </dl>
     <div class="form-actions">
-      <button type="button" class="btn btn-primary" [disabled]="contactGroup.invalid">Enviar</button>
+      <button type="submit" class="btn btn-primary" [disabled]="contactGroup.invalid">Enviar</button>
     </div>
   </form>
 </section>

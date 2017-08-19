@@ -18,6 +18,4 @@ interface IContact {
     comment?: string;
 }
 
-class Contact implements IContact {}
-
-export { Contact, IContact, Product, Products };
+export { IContact, Product, Products };

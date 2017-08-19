@@ -2,7 +2,8 @@ import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { Contact, IContact } from './..//shared/data.interface';
+import { IContact } from './..//shared/data.interface';
+import { DataService } from './../shared/data.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,9 +13,10 @@ import { Contact, IContact } from './..//shared/data.interface';
 export class ContactComponent implements OnInit {
 
   public contactGroup: FormGroup;
-  public contactModel: Contact;
+  public successMessage: string;
+  public errorMessage: string;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private ds: DataService) { }
 
   ngOnInit() {
     this.contactGroup = this.fb.group({
@@ -25,8 +27,15 @@ export class ContactComponent implements OnInit {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   }
 
-  hasErrors (error: boolean, touched: boolean) {
-    return (error && touched);
+  onSubmit (contact) {
+    this.ds.postContact(contact.value)
+    .subscribe(
+    (success: any) => {
+      this.successMessage = success;
+    },
+    (error: any) => {
+      this.errorMessage = error;
+    });
   }
 
 }

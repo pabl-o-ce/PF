@@ -7,7 +7,7 @@
     <li><a href="javascript:void(0)" (click)="scrollToProduct(1920)" title="Bebidas">Bebidas</a></li>
   </ul>
   <div class="menu-products">
-    <ul class="products" (scroll)="horizontalScroll()">
+    <ul class="products">
       <li *ngFor="let item of model.products" class="{{item.category}}">
         <a class="product" href="javascript:void(0)" title="{{item.name}}">
           <img class="product-image" src="img/products/{{item.img}}" alt="{{item.name}}">

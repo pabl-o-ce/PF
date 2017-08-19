@@ -24,8 +24,4 @@ export class MenuComponent implements OnInit {
     scroller.animate({'scrollLeft': scrollTo}, 500);
   }
 
-  public horizontalScroll() {
-
-  }
-
 }
