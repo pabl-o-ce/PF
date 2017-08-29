@@ -42,12 +42,22 @@
   }
 }
 
-@media (max-width: 339px) {
+@media (max-width: 475px) {
   .menu {
     .menu-category {
+
       li {
         padding: 10px;
       }
+    }
+  }
+}
+
+@media (max-width: 438px) {
+  .menu {
+    .menu-category {
+
+      flex-flow: row wrap;
     }
   }
 }
@@ -72,6 +82,7 @@
 .product {
   .product-image {
     width: 100%;
+    max-height: 160px;
   }
   .product-title {
     color: $light-5;
