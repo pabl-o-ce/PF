@@ -80,7 +80,7 @@
     {
       "id": 8,
       "name": "Locro de Papa",
-      "img": "LocrodePapa-fs8.png",
+      "img": "LocrodePapa.png",
       "category": "sopas",
       "price": 0,
       "desc": "yum yum",
@@ -90,8 +90,8 @@
     },
     {
       "id": 9,
-      "name": "Locro de Papa con Cuero",
-      "img": "PapaconCuero-fs8.png",
+      "name": "Papa con Cuero",
+      "img": "PapaconCuero.png",
       "category": "sopas",
       "price": 0,
       "desc": "yum yum",
@@ -130,6 +130,33 @@
     },
     {
       "id": 13,
+      "name": "Seco de Gallina",
+      "img": "SecodeGallina.png",
+      "category": "complementos",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": []
+    },
+    {
+      "id": 14,
+      "name": "Quimbolito",
+      "img": "Quimbolito.png",
+      "category": "complementos",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": []
+    },
+    {
+      "id": 15,
+      "name": "Cervezas",
+      "img": "Cervezas.png",
+      "category": "bebidas",
+      "price": 0,
+      "desc": "yum yum",
+      "ingredients": []
+    },
+    {
+      "id": 16,
       "name": "Gaseosas",
       "img": "gaseosas-fs8.png",
       "category": "bebidas",
@@ -138,7 +165,7 @@
       "ingredients": []
     },
     {
-      "id": 14,
+      "id": 17,
       "name": "Limonada",
       "img": "limonada-fs8.png",
       "category": "bebidas",
