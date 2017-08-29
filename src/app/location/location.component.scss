@@ -1,7 +1,16 @@
 @import '../../sass/variables';
 @import '../../sass/title';
 
-.location {}
+.location {
+  &-dir {
+    background: $brown;
+    color: $white;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+  }
+}
 #map {
   height: 300px;
   width: 100%;
