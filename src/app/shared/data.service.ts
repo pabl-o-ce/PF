@@ -23,7 +23,7 @@ export class DataService {
   }
 
   public postContact (data: IContact): Observable<any> {
-    return this.http.post(`url`, JSON.stringify(data), this.reqOptions)
+    return this.http.post(`http://api.elpalaciodelafritada.com/contact`, JSON.stringify(data), this.reqOptions)
     .map(this.extractData)
     .catch(this.handleError);
   }
