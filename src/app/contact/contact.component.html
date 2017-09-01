@@ -29,7 +29,7 @@
       <p>Nos pondremos en contacto contigo muy pronto.</p>
     </div>
   </div>
-  <form [formGroup]="contactGroup" (ngSubmit)="onSubmit(contactGroup)" novalidate>
+  <form *ngIf="!successMessage" [formGroup]="contactGroup" (ngSubmit)="onSubmit(contactGroup)" novalidate>
     <dl class="form-group"[ngClass]="{'errored': ((contactGroup.controls.name.errors) && (contactGroup.controls.name.dirty || contactGroup.controls.name.touched))}">
       <dt><label>Nombre</label></dt>
       <dd><input class="form-control" type="text" formControlName="name"/></dd>
