@@ -1,5 +1,8 @@
 {
-    "name": "",
+    "short_name": "Palacio de la Fritada",
+    "name": "El Palacio de la Fritada",
+    "start_url": ".",
+    "description": "La Mejor Comida Tradicional del Ecuador.",
     "icons": [
         {
             "src": "android-chrome-36x36.png",
